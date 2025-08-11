@@ -1,8 +1,7 @@
----
-title: Hello, Zeamezius
+title: Hello, Zeameizus
 date: 2025-01-01
 layout: post.njk
 ---
 
-Welcome to Zeamezius. This is your first post.
+Welcome to Zeameizus. This is your first post.
 
