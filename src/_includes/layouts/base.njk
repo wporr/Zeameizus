@@ -11,8 +11,12 @@
   {{ content | safe }}
   <p>—</p>
   <p>
-    {% set latest = collections.posts | first %}
-    Last Updated: {% if latest %}{{ latest.date | longDateTime }}{% endif %}.
+    {% if collections and collections.posts and collections.posts.length %}
+      {% set latest = collections.posts[0] %}
+      Last Updated: {{ latest.date | longDateTime }}.
+    {% else %}
+      Last Updated.
+    {% endif %}
   </p>
 </body>
 </html>
