@@ -5,7 +5,7 @@ layout: post.njk
 ---
 This is your new private blog. Go to your email to accept the signup, then enter in a new password (make it a good one!). From there you'll be able to go to <https://zeameizus.com/admin> to add and edit blogs as you please. And yes, you can add photos.  I hope you like it! 
 
-![](/uploads/67482093735__4fbc6ec0-3115-4c12-a3c8-26a507b692b7.jpeg)
+![](/uploads/img_5634.jpeg)
 
 I love you! 
 
