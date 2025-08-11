@@ -20,6 +20,6 @@ h1 a { color: inherit; text-decoration: none; }
 .post-list a { text-decoration: none; color: #0366d6; }
 .post-list .date { color: #555; font-variant-numeric: tabular-nums; }
 .meta { color: #666; }
-.content img { max-width: 100%; height: auto; }
+img, video, svg { max-width: 100%; height: auto; }
 footer { margin-top: 3rem; color: #777; font-size: 0.9rem; }
 
