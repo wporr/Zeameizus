@@ -1,12 +1,29 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Zeamezius Admin</title>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  </head>
-  <body>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex" />
+  <title>Content Manager</title>
+</head>
+<body>
+  <!-- Optional mount point — prevents "appendChild of null" timing issues -->
+  <div id="nc-root"></div>
+
+  <!-- (Optional) Netlify Identity for one-click login -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  <!-- Either let Decap auto-init after DOM is parsed… -->
+  <script defer src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+  <!-- …or do manual init if you customize/extend CMS:
+  <script>
+    window.CMS_MANUAL_INIT = true;
+    window.addEventListener('DOMContentLoaded', () => {
+      const { CMS, initCMS: init } = window;
+      init(); // or init({ config: { … } })
+    });
+  </script>
+  -->
+</body>
 </html>
 
