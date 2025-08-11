@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title or "Zeameizus" }}</title>
+</head>
+<body>
+  <p><a href="/" style="font-size:1.2em; font-weight:bold; font-style:italic;">Zeameizus</a></p>
+  <hr style="border:0; border-top:1px dashed #000; transform: rotate(0.6deg); transform-origin:left center; margin:0.75rem 0;" />
+  {{ content | safe }}
+  <p>—</p>
+  <p>
+    {% set latest = collections.posts | first %}
+    Last Updated: {% if latest %}{{ latest.date | longDateTime }}{% endif %}.
+  </p>
+</body>
+</html>
+
