@@ -1,6 +1,6 @@
 layout: base.njk
 ---
 <h2>{{ title }}</h2>
-<div class="meta">{{ page.date | longDateTime }}</div>
+<div class="meta">{{ page.date | readableDate }}</div>
 {{ content | safe }}
 

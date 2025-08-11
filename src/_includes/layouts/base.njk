@@ -13,7 +13,7 @@
   <p>
     {% if collections and collections.posts and collections.posts.length %}
       {% set latest = collections.posts[0] %}
-      Last Updated: {{ latest.date | longDateTime }}.
+      Last Updated: {{ latest.date | readableDate }}.
     {% else %}
       Last Updated.
     {% endif %}
